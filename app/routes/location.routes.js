@@ -1,3 +1,4 @@
+const locations = require("../controllers/location.controller");
 module.exports = app => {
     const locations = require("../controllers/location.controller.js");
 
@@ -8,6 +9,8 @@ module.exports = app => {
 
     // Retrieve all Tutorials
     router.get("/get", locations.findAll);
+
+    router.delete("/", locations.deleteAll);
 
     app.use('/api/locations', router);
 }

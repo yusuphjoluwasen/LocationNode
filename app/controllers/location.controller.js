@@ -42,3 +42,18 @@ exports.findAll = (req, res) => {
             });
         });
 };
+
+exports.deleteAll = (req, res) => {
+    Location.deleteMany({})
+        .then(data => {
+            res.send({
+                message: `${data.deletedCount} Tutorials were deleted successfully!`
+            });
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Some error occurred while removing all tutorials."
+            });
+        });
+};
