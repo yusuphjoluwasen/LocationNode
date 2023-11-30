@@ -12,6 +12,8 @@ exports.create = (req, res) => {
     const location = new Location({
         latitude: req.body.latitude,
         longitude: req.body.longitude,
+        stepCount: req.body.stepCount,
+        user: req.body.user,
         published: req.body.published ? req.body.published : false
     });
 

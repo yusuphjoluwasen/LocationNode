@@ -5,6 +5,8 @@ module.exports = mongoose => {
             {
                 latitude: String,
                 longitude: String,
+                stepCount: String,
+                user: String,
                 published: Boolean
             },
             { timestamps: true }
