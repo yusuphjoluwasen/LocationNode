@@ -14,6 +14,7 @@ exports.create = (req, res) => {
         longitude: req.body.longitude,
         stepCount: req.body.stepCount,
         user: req.body.user,
+        timeRemaining: req.body.timeRemaining,
         published: req.body.published ? req.body.published : false
     });
 

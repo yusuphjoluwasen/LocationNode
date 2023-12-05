@@ -7,6 +7,7 @@ module.exports = mongoose => {
                 longitude: String,
                 stepCount: String,
                 user: String,
+                timeRemaining: String,
                 published: Boolean
             },
             { timestamps: true }
