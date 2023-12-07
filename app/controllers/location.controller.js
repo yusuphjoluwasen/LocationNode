@@ -15,6 +15,7 @@ exports.create = (req, res) => {
         stepCount: req.body.stepCount,
         user: req.body.user,
         timeRemaining: req.body.timeRemaining,
+        verifindId:req.body.verifindId,
         published: req.body.published ? req.body.published : false
     });
 

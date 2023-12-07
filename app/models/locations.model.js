@@ -8,6 +8,7 @@ module.exports = mongoose => {
                 stepCount: String,
                 user: String,
                 timeRemaining: String,
+                verifindId:String,
                 published: Boolean
             },
             { timestamps: true }
